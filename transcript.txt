@@ -1,0 +1,41 @@
+0:00:00 - 0:00:02 SPEAKER 2:  Hello!
+0:00:02 - 0:00:04 SPEAKER 2:  How are you Ram?
+0:00:04 - 0:00:06 SPEAKER 1:  I am very well.
+0:00:06 - 0:00:08 SPEAKER 1:  My name is Ammar.
+0:00:08 - 0:00:10 SPEAKER 2:  Ram,
+0:00:10 - 0:00:12 SPEAKER 1:  don't curse me.
+0:00:12 - 0:00:14 SPEAKER 2:  I said I am fine.
+0:00:14 - 0:00:16 SPEAKER 1:  How are you?
+0:00:16 - 0:00:18 SPEAKER 1:  I am just joking bro.
+0:00:18 - 0:00:20 SPEAKER 1:  How is the flow going?
+0:00:20 - 0:00:22 SPEAKER 1:  Okay. You are okay?
+0:00:22 - 0:00:24 SPEAKER 2:  I am okay.
+0:00:24 - 0:00:26 SPEAKER 1:  So Ram,
+0:00:26 - 0:00:28 SPEAKER 1:  you have to change the number
+0:00:28 - 0:00:30 SPEAKER 1:  after this call.
+0:00:32 - 0:00:34 SPEAKER 2:  We got
+0:00:34 - 0:00:36 SPEAKER 1:  new number again?
+0:00:36 - 0:00:38 SPEAKER 1:  Yes, we got new number again.
+0:00:38 - 0:00:40 SPEAKER 1:  We got two new numbers.
+0:00:44 - 0:00:46 SPEAKER 1:  What if it gets marked as one?
+0:00:46 - 0:00:48 SPEAKER 1:  Then again we will check.
+0:00:48 - 0:00:50 SPEAKER 1:  It is actually very cheap.
+0:00:50 - 0:00:52 SPEAKER 1:  So there is no problem.
+0:00:52 - 0:00:54 SPEAKER 2:  Okay.
+0:00:54 - 0:00:56 SPEAKER 2:  Ram,
+0:00:56 - 0:00:58 SPEAKER 1:  how is the weather?
+0:00:58 - 0:01:00 SPEAKER 2:  It is very cold.
+0:01:00 - 0:01:02 SPEAKER 1:  It has been raining till now.
+0:01:02 - 0:01:04 SPEAKER 1:  Today it is very dry.
+0:01:04 - 0:01:06 SPEAKER 1:  Why are you going to washroom?
+0:01:06 - 0:01:08 SPEAKER 2:  Huh?
+0:01:10 - 0:01:12 SPEAKER 2:  Okay.
+0:01:12 - 0:01:14 SPEAKER 1:  How is your studies going?
+0:01:14 - 0:01:16 SPEAKER 1:  Studies?
+0:01:16 - 0:01:18 SPEAKER 1:  I am taking some next time.
+0:01:18 - 0:01:20 SPEAKER 1:  Okay.
+0:01:20 - 0:01:22 SPEAKER 1:  Next time you will do studies.
+0:01:22 - 0:01:24 SPEAKER 2:  Okay.
+0:01:24 - 0:01:26 SPEAKER 1:  Let's take this call.
+0:01:26 - 0:01:28 SPEAKER 1:  Okay. Bye.
+0:01:28 - 0:01:30 SPEAKER 2:  Bye.

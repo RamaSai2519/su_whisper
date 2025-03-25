@@ -1,6 +1,6 @@
 import os
 import wave
-import torch
+import time
 import whisper
 import datetime
 import contextlib
@@ -32,7 +32,7 @@ class AudioProcessor:
 
 
 class Transcriber:
-    def __init__(self, model_name: str = "turbo"):
+    def __init__(self, model_name: str = "large"):
         self.model = whisper.load_model(model_name)
 
     def transcribe(self, path: str) -> list:
@@ -58,9 +58,7 @@ class SpeakerIdentifier:
         end = min(self.duration, segment["end"])
         clip = Segment(start, end)
         waveform, sample_rate = self.audio.crop(self.path, clip)
-
-        # waveform shape: [1, time] is expected
-        waveform = waveform.squeeze(0).unsqueeze(0)  # ensure [1, time]
+        waveform = waveform.squeeze(0).unsqueeze(0)
 
         embedding = self.embedding_model.encode_batch(waveform)
         return embedding.squeeze().detach().numpy()
@@ -88,15 +86,17 @@ class TranscriptWriter:
 
     def write_transcript(self, segments: list, file_path: str = "transcript.txt"):
         with open(file_path, "w") as f:
-            for i, segment in enumerate(segments):
-                if i == 0 or segments[i - 1]["speaker"] != segment["speaker"]:
-                    f.write("\n" + segment["speaker"] + ' ' +
-                            str(self.time(segment["start"])) + '\n')
-                f.write(segment["text"][1:] + ' ')
+            f.write("Transcript\n")
+            for segment in segments:
+                start = self.time(segment["start"])
+                end = self.time(segment["end"])
+                speaker = segment["speaker"]
+                text = segment["text"]
+                f.write(f"{start} - {end} {speaker}: {text}\n")
 
 
 def main() -> None:
-    path = 'test.mp3'
+    path = 'audio.mp3'
     audio_processor = AudioProcessor(path)
     transcriber = Transcriber()
     segments = transcriber.transcribe(path)
@@ -108,4 +108,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
+    start = time.perf_counter()
     main()
+    print(f"Time taken: {time.perf_counter() - start:.2f}s")
