@@ -10,7 +10,6 @@ from pyannote.audio import Audio
 from pyannote.core import Segment
 from sklearn.cluster import AgglomerativeClustering
 from speechbrain.inference.speaker import EncoderClassifier
-from pyannote.audio.pipelines.speaker_verification import PretrainedSpeakerEmbedding
 
 
 EMBED_MODEL_PATH = os.getcwd() + '/models'
